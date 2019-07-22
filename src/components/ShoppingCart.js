@@ -19,7 +19,7 @@ const ShoppingCart = () => {
     <div className="shopping-cart">
       {cart.map(item => (
         <Item
-          key={item.id + Math.floor(Math.random() * 10001)}
+          key={item.id + Math.floor(Math.random() * 1001)}
           {...item}
           removeItem={removeItem}
         />
