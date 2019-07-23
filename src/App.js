@@ -11,9 +11,9 @@ import CartContext from "./contexts/CartContext";
 
 function App() {
   const [products] = useState(data);
-  const [cart, setCart] = useState([]);
-
-  //   console.log(cart);
+  const [cart, setCart] = useState(
+    JSON.parse(localStorage.getItem("cartList"))
+  );
 
   const addItem = item => {
     setCart([...cart, item]);

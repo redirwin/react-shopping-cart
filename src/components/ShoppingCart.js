@@ -15,6 +15,8 @@ const ShoppingCart = () => {
       .toFixed(2);
   };
 
+  if (!cart) return <div>Loading...</div>;
+
   return (
     <div className="shopping-cart">
       {cart.map(item => (
